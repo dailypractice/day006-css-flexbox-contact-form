@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Day 006</title>
-  <link rel="stylesheet" href="/css/styles.css">
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 006 CSS Flexbox Contact Form</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div class="flex-wrap">
+      <div class="form-wrap">
+        <form action="#" class="form">
+          <div class="left-content">
+            <div class="heading">
+              <h2>Write Us</h2>
+            </div>
+          </div>
+          <div class="name">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="mail">
+            <label for="mail">Email: </label>
+            <input type="text" name="mail" id="mail" />
+          </div>
+          <div class="check">
+            <label for="check">Yes, I agree to the <a href="#">Terms</a> and <a href="#">Privacy Policy</a></label>
+            <input type="checkbox" name="check" id="check" />
+          </div>
+          <div class="right-content">
+            <div class="message">
+              <label for="message">Message: </label>
+              <textarea name="message" id="message"></textarea>
+            </div>
+            <div class="button-wrap">
+             <button type="submit">Send Message</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
