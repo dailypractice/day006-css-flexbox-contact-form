@@ -15,6 +15,10 @@ ul {
   justify-content: space-evenly;
 }
 
+.container > h2 {
+  text-align: center;
+}
+
 .flex-wrap {
   display: flex;
   align-items: center;
@@ -145,7 +149,7 @@ ul {
     width: 100%;
   }
 
-  ul{
+  ul {
     padding-bottom: 40px;
   }
   .flex-wrap {
