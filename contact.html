@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 006 CSS Flexbox Contact Form</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/contact.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <ul>
+          <a href="#">Home</a>
+          <a href="/contact.html">Contact</a>
+        </ul>
+      </nav>
+      <div class="flex-wrap">
+        <div class="form-wrap">
+          <form action="#" class="form">
+            <div class="left-content">
+              <div class="heading">
+                <h2>Write Us</h2>
+              </div>
+              <div class="name">
+                <label for="name">Name: </label>
+                <input type="text" name="name" id="name" />
+              </div>
+              <div class="mail">
+                <label for="mail">Email: </label>
+                <input type="text" name="mail" id="mail" />
+              </div>
+              <div class="check">
+                <label for="check">Yes, I agree to the <a href="#">Terms</a> and <a href="#">Privacy Policy</a></label>
+                <input type="checkbox" name="check" id="check" />
+              </div>
+            </div>
+            <div class="right-content">
+              <div class="message">
+                <label for="message">Message: </label>
+                <textarea name="message" id="message"></textarea>
+              </div>
+              <div class="button-wrap">
+                <button type="submit">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

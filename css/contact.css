@@ -1,0 +1,187 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.flex-wrap {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.flex-wrap .form-wrap {
+  width: 900px;
+  background: #2a2b35;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.form {
+  display: flex;
+}
+
+.left-content {
+  width: 40%;
+  padding: 60px 60px 100px 70px;
+}
+
+.heading h2 {
+  font-size: 3rem;
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.heading h2::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  left: 0;
+  bottom: 0;
+  background: #ff8600;
+  border-radius: 3px;
+}
+
+.name label,
+.mail label {
+  display: block;
+  font-size: 14px;
+  color: #afafaf;
+  margin-bottom: 8px;
+}
+
+.name input,
+.mail input {
+  display: block;
+  width: 100%;
+  background: #2a2b35;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  border-bottom: 1px solid #ccc;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.check input {
+  margin-right: 5px;
+}
+
+.check label {
+  font-size: 1rem;
+}
+
+.check label a {
+  color: #ff8600;
+  text-decoration: none;
+}
+
+.right-content {
+  padding-top: 70px;
+  display: flex;
+  width: 60%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.message {
+  position: relative;
+  height: 100%;
+  padding-left: 20px;
+  border-left: 1px solid #ccc;
+  overflow: hidden;
+}
+
+.message label {
+  display: block;
+  font-size: 1.5rem;
+  color: #afafaf;
+  margin-bottom: 8px;
+}
+
+.message textarea {
+  width: 100%;
+  height: calc(100%-27px);
+  border: 0;
+  outline: 0;
+  background: #2a2b35;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.button-wrap button {
+  border: 0;
+  outline: 0;
+  width: 100%;
+  height: 50px;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #fff;
+  background: #ff8600;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 200px) and (max-width: 599px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  ul{
+    padding-bottom: 40px;
+  }
+  .flex-wrap {
+    flex-direction: column;
+  }
+
+  .flex-wrap .form-wrap {
+    width: 100vw;
+  }
+
+  .form {
+    flex-direction: column;
+  }
+
+  .left-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .right-content {
+    width: 100%;
+  }
+
+  .message {
+    padding: 0;
+  }
+
+  .button-wrap {
+    display: flex;
+    justify-content: center;
+  }
+
+  .button-wrap button {
+    width: 100%;
+  }
+}
